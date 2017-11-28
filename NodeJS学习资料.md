@@ -17,3 +17,10 @@ npm install 包模块名 --save-dev    局部安装包模块，并把包依赖
 npm  list                          显示安装的npm包
 npm  show  包模块名                 显示具体模块的信息
 ```
+* 全局安装配置文件（npmrc）
+  * 文件路径 C:\Program Files\nodejs\node_modules\npm 
+  * 设置新的全局安装路径
+```
+     prefix = 新的安装路径
+     cache  =  新的安装路径（缓存文件）
+```
