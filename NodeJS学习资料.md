@@ -47,15 +47,15 @@ npm  show  包模块名                显示具体模块的信息
   ```
   *  添加一个依赖包
     ```
-      yarn add [包模块]
+     yarn add [包模块]
      yarn add [包模块]@[version]
      yarn add [包模块]@[tag]
   ```
   *  更新一个依赖包
-   ```
-       yarn upgrade [包模块]
-  yarn upgrade [包模块]@[version]
-  yarn upgrade [包模块]@[tag]
+    ```
+     yarn upgrade [包模块]
+     yarn upgrade [包模块]@[version]
+     yarn upgrade [包模块]@[tag]
   ```
   *  删除一个依赖包
   ```
