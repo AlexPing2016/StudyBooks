@@ -27,5 +27,16 @@ npm  show  包模块名                显示具体模块的信息
      prefix = 新的安装路径
      cache  =  新的安装路径（缓存文件）
 ```
-   ## 镜像安装设置
+## 镜像安装设置
+* 通过命令使用淘宝镜像
+```
+  npm install 包模块名 --save --registry=https://registry.npm.taobao.org
+```
+* 通过配置使用淘宝镜像
+```
+  在npmrc文件中添加以下配置项
+  registry=https://registry.npm.taobao.org
+```
+
+   
    
