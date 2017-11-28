@@ -11,7 +11,9 @@
 * [官方网址](https://nodejs.org/en/)
 * 常用命令
 ```
-npm install -g npm  升级
-npm  list           显示安装的npm包
-npm  show  模块名    显示具体模块的信息
+npm init                          生成配置文件package.json（加-y采用默认参数）
+npm install -g 包模块名            全局安装包模块（install可以简写成i）
+npm install 包模块名 --save-dev    局部安装包模块，并把包依赖信息写入配置文件中，工具包加dev，普通函数库--save即可
+npm  list                          显示安装的npm包
+npm  show  包模块名                 显示具体模块的信息
 ```
