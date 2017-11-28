@@ -52,18 +52,18 @@ npm  show  包模块名                显示具体模块的信息
      yarn add [包模块]@[tag]
   ```
   *  更新一个依赖包
-    ```
-  yarn upgrade [包模块]
+   ```
+       yarn upgrade [包模块]
   yarn upgrade [包模块]@[version]
   yarn upgrade [包模块]@[tag]
   ```
   *  删除一个依赖包
-    ```
-  yarn remove [包模块]
-    ```
+  ```
+    yarn remove [包模块]
+  ```
   *  安装所有依赖包
     ```
-  yarn 或 yarn install
+   yarn 或 yarn install
   ```
 
    
