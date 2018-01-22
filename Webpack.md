@@ -39,9 +39,9 @@
 
  #### 参考代码
  
-    `module.exports = {
+    ` module.exports = {  
     
-      entry:__dirname + '/app/main.js',
+    entry:__dirname + '/app/main.js',
       
       output:{
       
