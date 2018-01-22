@@ -30,12 +30,13 @@
  #### 项目根路径下添加webpack.config.js配置文件
  #### 在配置文件中，添加配置项
    
-   >
-   >* moule.exports = {}
-   >
-   >* entry：入口文件，需要打包的源文件
-   >
-   >* output：输出文件，打包合并后的目标文件，其中包含path和filename两项
-   >
+>
+>* moule.exports = {}
+>
+>* entry：入口文件，需要打包的源文件
+>
+>* output：输出文件，打包合并后的目标文件，其中包含path和filename两项
+>
+
  #### 参考代码
     
