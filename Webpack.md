@@ -29,9 +29,8 @@
 ### 2、利用配置文件进行打包
  #### 项目根路径下添加webpack.config.js配置文件
  #### 在配置文件中，添加配置项
-   
 >
->* moule.exports = {}
+>* module.exports = {}
 >
 >* entry：入口文件，需要打包的源文件
 >
@@ -39,4 +38,16 @@
 >
 
  #### 参考代码
-    
+ 
+    `module.exports = {
+    
+      entry:__dirname + '/app/main.js',
+      
+      output:{
+      
+        path:__dirname + '/public',
+        
+        filename:'webpack.js'
+        
+      }
+     }`
