@@ -38,9 +38,9 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
    >
    >* output：输出文件，打包合并后的目标文件，其中包含path和filename两项
    >
- *. 参考代码
+ * 参考代码
  
-    ```  
+```  
       module.exports = {
       
       entry:__dirname + '/app/main.js',      
@@ -52,4 +52,5 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
         filename:'webpack.js'
         
       }
-     }```
+     }
+ ```
