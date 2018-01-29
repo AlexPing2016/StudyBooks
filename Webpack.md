@@ -31,13 +31,14 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
  
  * 项目根路径下添加webpack.config.js配置文件
  * 在上述配置文件中，添加配置项 
-   > 
-   >* module.exports = {} 
-   > 
-   >* entry：入口文件,需要打包的源文件,也可以是多个文件,此时output中的filename可以用name外套中括号来表示输出文件名
-   >
-   >* output：输出文件，打包合并后的目标文件，其中包含path和filename两项
-   > 
+   >
+   >* module.exports = {} 
+   >
+   >* entry：入口文件,需要打包的源文件,也可以是多个文件,此时output中的filename可以用name外套中括号来表示输出文件名 
+   >
+   >* output：输出文件，打包合并后的目标文件，其中包含path和filename两项 
+   >
+
  * 参考代码
  
 ```  
