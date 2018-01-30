@@ -2,7 +2,7 @@
 ## 一、Webpack概述
 Webpack是一个模块加载器以及打包工具，能把各种资源，例如js、样式和图片等作为模块进行使用和处理。
    
-* 支持CommonJS和AmdJS模块
+* 支持CommonJS（服务器端为主，主要应用是nodeJS和webpack）和AmdJS（浏览器端应用，解决CommonJS同步加载缓慢的问题）
 * 支持其他模块的加载器，例如babel
 * 通过配置打包多个文件
 * 支持SCSS,SASS样式文件预处理，和图片资源等的打包
@@ -66,3 +66,34 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
  
  * 执行打包命令,npm后面的命令名必须和script中的key保持一致，例如把start改掉，则npm后面start也必须保持一致
  `npm start`
+
+## 四、高级应用
+
+1. 加载json文件
+
+* 安装json-loader模块
+
+* 在webpack配置文件中，添加模块配置项
+
+```
+  module:{
+  
+        loaders:[
+        
+            {
+            
+                test:/\.json$/,//test设置文件格式的正则表达式
+                
+                use:"json-loader"//use设置加载的类型
+                
+            }
+        ]
+    }
+
+```
+
+* 添加json文件,在调用的js文件中通过require加载json文件
+
+2. CSS样式文件
+
+3. ES6转换
