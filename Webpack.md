@@ -27,7 +27,7 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
  
   `webpack  源文件  目标文件`
    
-2. 利用配置文件进行打包
+2. 利用配置文件进行打包方式1
  
  * 项目根路径下添加webpack.config.js配置文件
  * 在上述配置文件中，添加配置项 
@@ -56,17 +56,24 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
      }
      ```
   * 执行打包命令
+    
     ```webpack```
    
- 3. 使用配置文件打包2(针对没有全局安装webpack的情况)
+ 3. 使用配置文件打包方式2(针对没有全局安装webpack的情况)
  
- * 按照上面的打包方法1，完成webpack配置文件的内容设置
+ * 按照上面的打包方式1，先完成webpack配置文件的内容设置
    
- * 在package.js文件中的script项中添加"start"：“webpack”
+ * 在package.js文件中的script项中添加子项"start"：“webpack”,当npm启动时会执行webpack打包命令
+   
+   ```
+    scripts:{
+      start:"webpack"
+    }
+    npm start
+    ```
  
- * 执行打包命令,npm后面的命令名必须和script中的key保持一致，例如把start改掉，则npm后面start也必须保持一致
+ * 如果把start改为hd，则要用npm run hd
  
-   ```npm start```
 
 ## 四、高级应用
 
