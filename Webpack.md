@@ -70,7 +70,7 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
       start:"webpack"
     }
     npm start
-    ```
+   ```
  
  * 如果把start改为hd，则要用npm run hd
  
