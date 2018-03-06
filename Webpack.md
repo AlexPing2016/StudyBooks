@@ -9,23 +9,23 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
 ## 二、安装
 
 1. 安装nodejs
-2. 全局安装webpack
+2. 全局安装webpack-cli
  
-  `npm install -g webpack`
+  `npm install -g webpack-cli`
   
 3. 项目文件夹初始化
  
   `npm init`
   
-4. 项目文件夹中安装webpack
+4. 项目文件夹中安装webpack-cli
  
-  `npm install webpack -D`
+  `npm install webpack-cli -D`
     
 ## 三、基本应用
 
 1. 打包文件的基本方法
  
-  `webpack  源文件  目标文件`
+  `webpack  源文件  目标文件(新版本不支持)`
    
 2. 利用配置文件进行打包方式1（全局安装webpack的情况下）
  
