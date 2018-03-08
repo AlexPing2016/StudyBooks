@@ -108,12 +108,19 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
   
     ```
     module: {
+    
         rules: {
+        
            {
+           
            test: /\.css$/,
+           
            use: ['style-loader', 'css-loader']
+           
          }
+         
        ]
+       
       }
     ```
 
