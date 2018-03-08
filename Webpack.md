@@ -1,5 +1,5 @@
 # Webpack应用
-## 一、Webpack概述
+## 一、Webpack概述(针对3.1版本)
 Webpack是一个模块加载器以及打包工具，能把各种资源，例如js、样式和图片等作为模块进行使用和处理。
    
 * 支持CommonJS（服务器端为主，主要应用是nodeJS和webpack）和AmdJS（浏览器端应用，解决CommonJS同步加载缓慢的问题）
@@ -100,8 +100,23 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
 
 ```
 
-* 添加json文件,在调用的js文件中通过require加载json文件
+* 在调用的js文件中通过require加载json文件
 
 2. CSS样式文件
+  
+  * 安装style-loader和css-loader
+  
+  * 在webpack配置文件中，添加模块配置项
+  ```
+    module: {
+        rules: {
+        {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  }
+  ```
+  * 在调用的js文件中通过require加载样式文件
 
 3. ES6转换
