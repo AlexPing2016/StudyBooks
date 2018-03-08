@@ -107,16 +107,16 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
   * 安装style-loader和css-loader
   
   * 在webpack配置文件中，添加模块配置项
-  ```
+    ```
     module: {
         rules: {
-        {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+           {
+           test: /\.css$/,
+           use: ['style-loader', 'css-loader']
+         }
+       ]
       }
-    ]
-  }
-  ```
+    ```
   * 在调用的js文件中通过require加载样式文件
 
 3. ES6转换
