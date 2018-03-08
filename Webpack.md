@@ -100,10 +100,11 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
   ```
   * 在调用的js文件中通过require加载json文件
 
-2. CSS样式文件
+2. 加载CSS样式文件
   
   * 安装style-loader和css-loader
   * 在webpack配置文件中，添加模块配置项
+  * 在调用的js文件中通过require加载样式文件
   
     ```
     module: {
@@ -114,8 +115,6 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
          }
        ]
       }
-    ```
-    
-   * 在调用的js文件中通过require加载样式文件
+    ```
 
 3. ES6转换
