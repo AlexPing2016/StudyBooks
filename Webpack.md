@@ -107,7 +107,7 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
   * 在调用的js文件中通过require加载样式文件
   
     ```
-    module: {
+      module: {
     
         rules: {
         
