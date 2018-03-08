@@ -79,9 +79,9 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
 
 1. 加载json文件
 
-* 安装json-loader模块
+  * 安装json-loader模块
 
-* 在webpack配置文件中，添加模块配置项
+  * 在webpack配置文件中，添加模块配置项
 
   ```
     module:{
@@ -100,7 +100,7 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
 
   ```
 
-* 在调用的js文件中通过require加载json文件
+  * 在调用的js文件中通过require加载json文件
 
 2. CSS样式文件
   
