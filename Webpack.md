@@ -1,31 +1,37 @@
 # Webpack应用
-## 一、Webpack概述(针对3.1版本)
+## 一、Webpack概述(针对4.1版本)
 Webpack是一个模块加载器以及打包工具，能把各种资源，例如js、样式和图片等作为模块进行使用和处理。
    
 * 支持CommonJS（服务器端为主，主要应用是nodeJS和webpack）和AmdJS（浏览器端应用，解决CommonJS同步加载缓慢的问题）
 * 支持其他模块的加载器，例如babel
 * 通过配置打包多个文件
-* 支持SCSS,SASS样式文件预处理，和图片资源等的打包
+* 支持SCSS,SASS样式文件预处理，和图片资源等的打包  
 ## 二、安装
 
 1. 安装nodejs
-2. 全局安装webpack-cli
+2. 全局安装
  
-  `npm install -g webpack-cli`
+  `npm install -g webpack  
+   npm install -g webpack-cli`
   
 3. 项目文件夹初始化
- 
+
   `npm init`
   
-4. 项目文件夹中安装webpack-cli
+4. 项目文件夹中安装
  
-  `npm install webpack-cli -D`
+  `npm install webpack -S
+   npm install webpack-cli -S`
     
 ## 三、基本应用
 
-1. 打包文件的基本方法
+1. 打包文件的基本方法  
  
-  `webpack  源文件  目标文件(新版本不支持)`
+  `webpack  源文件  目标文件(老版本使用)
+   webpack (4.1版本使用，使用默认的入口和出口文件路径)
+   webpack  --mode production（生产模式，一行显示）
+   webpack  --mode development（开发模式，多行显示）
+  `
    
 2. 利用配置文件进行打包方式1（全局安装webpack的情况下）
  
