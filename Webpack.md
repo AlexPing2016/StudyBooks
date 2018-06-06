@@ -11,7 +11,8 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
 1. 安装nodejs
 2. 全局安装
  
-  ```npm install -g webpack  
+  ```
+   npm install -g webpack  
    npm install -g webpack-cli
   ```
   
@@ -21,7 +22,8 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
   
 4. 项目文件夹中安装
  
-  ```npm install webpack -S
+  ```
+   npm install webpack -S
    npm install webpack-cli -S
    ```
     
@@ -29,7 +31,8 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
 
 1. 打包文件的基本方法  
  
-  ```webpack  源文件  目标文件(老版本使用)
+  ```
+   webpack  源文件  目标文件(老版本使用)
    webpack (4.1版本使用，使用默认的入口和出口文件路径)
    webpack  --mode production（生产模式，一行显示）
    webpack  --mode development（开发模式，多行显示）
