@@ -73,11 +73,11 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
  
  * 按照上面的打包方式1，先完成webpack配置文件的内容设置
    
- * 在package.js文件中的script项中添加子项"start"：“webpack”,当npm启动时会执行webpack打包命令
+ * 在package.json文件中的script项中添加子项"start"：“webpack”,当npm启动时会执行webpack打包命令
    
    ```
     scripts:{
-      start:"webpack"
+      start:"webpack --mode development"
     }
     ====================
     执行打包命令：npm start
@@ -85,6 +85,31 @@ Webpack是一个模块加载器以及打包工具，能把各种资源，例如j
  
  * 如果把start改为hd，则要用npm run hd
  
+ 4. 安装本地服务器
+ * 安装webpack-dev-server  
+ 
+ ```
+ npm install webpack-dev-server -S
+ ```
+ 
+ * 修改配置文件  
+ 
+  ```
+    devServer:{
+      contentBase:"",    //服务器根路径
+      inlilne：true,     //实时刷新
+      port:8080,        //端口
+      hot：true          //实时刷新
+    }
+   ```
+  * 修改package.json文件  
+ 
+  ```
+    scripts:{
+      start:"webpack",
+      dev:"webpack-dev-server --open --inline"
+    }
+   ``` 
 
 ## 四、高级应用
 
