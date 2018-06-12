@@ -17,7 +17,7 @@ npm install -gd 包模块名@版本号    全局安装包模块（install可以�
 npm install 包模块名 --save-dev    局部安装包模块，并把包依赖信息写入配置文件devdependencies中，例如webpack,gulp开发阶段使用的包  
 npm install 包模块名 --save        局部安装包模块，并把包依赖信息写入配置文件dependencies中，例如Express、jQuery发布后还要使用的包  
 npm unstall 包模块名               删除安装包模块  
-npm  list                         显示安装的npm包  
+npm  list                         显示当前安装的npm包（加-g，显示全局安装包）  
 npm  show  包模块名                显示具体模块的信息  
 npm  root -g                      显示全局安装的包模块信息
 npm  view 包模块名 versions（version）显示包模块的所有版本（当前版本）信息
