@@ -25,12 +25,14 @@ npm  view 包模块名 versions（version）显示包模块的所有版本（当
 * 全局安装配置文件（npmrc）
   * 文件路径 C:\Program Files\nodejs\node_modules\npm 
      
-  * 设置新的全局安装路径（默认路径：C:\Users\Administrator\AppData\Roaming\npm，npm_cache目录是缓存模块包）  
-  * 修改环境变量Path中的新路径
-```
+  * 设置新的全局安装路径（默认路径：C:\Users\Administrator\AppData\Roaming\npm，npm_cache目录是缓存模块包）    
+ ```
      prefix = 新的安装路径
      cache  =  新的安装路径（缓存文件）
 ```
+
+  * 修改环境变量Path中的新路径
+
 ## 镜像安装设置
 * 通过命令使用淘宝镜像
 ```
