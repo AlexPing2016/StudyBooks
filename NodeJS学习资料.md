@@ -13,17 +13,18 @@
 
 ```
 npm init                          生成配置文件package.json（加-y采用默认参数）
-npm install -g 包模块名            全局安装包模块（install可以简写成i）
-npm install 包模块名 --save-dev    局部安装包模块，并把包依赖信息写入配置文件devdependencies中，例如webpack,gulp开发阶段使用的包
-npm install 包模块名 --save        局部安装包模块，并把包依赖信息写入配置文件dependencies中，例如Express、jQuery发布后还要使用的包
-npm unstall 包模块名               删除安装包模块
-npm  list                         显示安装的npm包
-npm  show  包模块名                显示具体模块的信息
+npm install -gd 包模块名           全局安装包模块（install可以简写成i，d表示显示安装操作列表） 
+npm install 包模块名 --save-dev    局部安装包模块，并把包依赖信息写入配置文件devdependencies中，例如webpack,gulp开发阶段使用的包  
+npm install 包模块名 --save        局部安装包模块，并把包依赖信息写入配置文件dependencies中，例如Express、jQuery发布后还要使用的包  
+npm unstall 包模块名               删除安装包模块  
+npm  list                         显示安装的npm包  
+npm  show  包模块名                显示具体模块的信息  
 ```
 * 全局安装配置文件（npmrc）
   * 文件路径 C:\Program Files\nodejs\node_modules\npm 
-  * 设置新的全局安装路径
-  * 修改环境变量Path中的新路径
+     
+  * 设置新的全局安装路径（默认路径：C:\Users\Administrator\AppData\Roaming\npm，npm_cache目录是缓存模块包）  
+  * 修改环境变量Path中的新路径
 ```
      prefix = 新的安装路径
      cache  =  新的安装路径（缓存文件）
